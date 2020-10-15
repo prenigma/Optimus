@@ -20,10 +20,8 @@ before_install:
 
 install:
   - ./install-spark.sh
-  - "pip install -r requirements-test.txt --progress-bar=off"
+  - "pip install -r requirements.txt --progress-bar=off"
 
-script:
-  - py.test -v --ignore=optimus/dl/ --ignore=examples/ --ignore=tests/creator --ignore=tests/test_dl.py
 
 deploy:
   provider: pypi
@@ -40,5 +38,4 @@ notifications:
   email: false
   
 
-after_success:
-  - coveralls
+
