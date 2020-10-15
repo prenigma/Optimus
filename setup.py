@@ -54,7 +54,7 @@ if 'nosetests' in sys.argv[1:]:
     setup_requires.append('nose')
 
 setup(
-    name='optimuspyspark',
+    name='prenigmaoptimuspyspark',
     version=get_version(),
     author='Favio Vazquez and Argenis Leon',
     author_email='argenisleon@gmail.com',
